@@ -1,0 +1,23 @@
+.about-container { min-height:100vh; width:100%; display:flex; align-items:center; justify-content:center; padding:110px 20px 90px; background:radial-gradient(circle at 15% 10%, rgba(0,180,255,.08), transparent 28%), radial-gradient(circle at 85% 80%, rgba(0,255,224,.045), transparent 30%), #050509; color:#fff; }
+.about-card { width:100%; max-width:1120px; padding:48px; border:1px solid rgba(255,255,255,.08); border-radius:24px; background:linear-gradient(145deg, rgba(255,255,255,.055), rgba(255,255,255,.018)); box-shadow:0 25px 90px rgba(0,0,0,.3); backdrop-filter:blur(14px); }
+.about-kicker { color:var(--accent); font-size:.74rem; font-weight:800; letter-spacing:.18em; }
+.about-header { margin:8px 0 16px; font-size:clamp(2rem,4vw,3rem); background:linear-gradient(90deg,var(--accent),#00ffe0); -webkit-background-clip:text; background-clip:text; color:transparent; }
+.about-text { max-width:920px; margin:0 0 13px; color:rgba(255,255,255,.73); font-size:1rem; line-height:1.85; }
+.lead-text { color:rgba(255,255,255,.9); font-size:1.12rem; }
+.about-text strong { color:#fff; }
+.focus-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:16px; margin:38px 0 42px; }
+.focus-card { padding:22px; border-radius:16px; border:1px solid rgba(255,255,255,.07); background:rgba(255,255,255,.035); transition:.3s; }
+.focus-card:hover { border-color:rgba(0,180,255,.3); box-shadow:0 15px 45px rgba(0,180,255,.07); }
+.focus-icon { color:var(--accent); font-size:1.35rem; margin-bottom:14px; }
+.focus-card h3 { margin:0 0 8px; font-size:1.05rem; color:#fff; }
+.focus-card p { margin:0; color:#9da5b0; font-size:.9rem; line-height:1.65; }
+.education-section { padding-top:5px; }
+.education-header { margin:8px 0 18px; font-size:1.65rem; color:#fff; }
+.edu-card { display:flex; align-items:flex-start; gap:18px; padding:22px; border-radius:16px; border:1px solid rgba(255,255,255,.08); background:rgba(255,255,255,.035); transition:.3s; }
+.edu-card:hover { border-color:rgba(0,180,255,.3); box-shadow:0 15px 45px rgba(0,180,255,.07); }
+.edu-icon { width:44px; height:44px; display:grid; place-items:center; flex-shrink:0; border-radius:12px; color:var(--accent); background:rgba(0,180,255,.09); }
+.edu-title { margin:0 0 6px; color:#fff; font-size:1.12rem; }
+.edu-institute { margin:0 0 5px; color:#b9c0c9; }
+.edu-details { color:#7f8995; font-size:.85rem; }
+@media (max-width:800px) { .about-card { padding:32px 24px; } .focus-grid { grid-template-columns:1fr; } }
+@media (max-width:500px) { .about-container { padding-left:12px; padding-right:12px; } .about-card { padding:28px 18px; } .lead-text { font-size:1rem; } }

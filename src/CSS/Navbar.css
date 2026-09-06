@@ -1,0 +1,448 @@
+/* =========================================
+   NAVBAR
+   ========================================= */
+
+.nav {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+
+  width: 100%;
+  height: 68px;
+
+  display: flex;
+  align-items: center;
+
+  padding: 0 32px;
+
+  background: rgba(3, 12, 14, 0.82);
+
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+
+  box-sizing: border-box;
+}
+
+
+/* =========================================
+   BRAND
+   ========================================= */
+
+.brand-button {
+  display: flex;
+  align-items: center;
+
+  gap: 12px;
+
+  padding: 0;
+
+  border: none;
+  outline: none;
+
+  background: transparent;
+
+  cursor: pointer;
+
+  color: #ffffff;
+
+  text-align: left;
+}
+
+
+/* =========================================
+   LOGO
+   ========================================= */
+
+.logo {
+  width: 40px;
+  height: 40px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background:
+    linear-gradient(
+      135deg,
+      var(--accent),
+      var(--accent-2)
+    );
+
+  color: #001014;
+
+  font-size: 0.9rem;
+  font-weight: 800;
+
+  box-shadow:
+    0 0 15px rgba(0, 255, 224, 0.25);
+}
+
+
+/* =========================================
+   BRAND TEXT
+   ========================================= */
+
+.brand-text {
+  display: flex;
+  flex-direction: column;
+
+  line-height: 1.1;
+}
+
+.brand-text h1 {
+  margin: 0;
+
+  font-size: 1rem;
+
+  font-weight: 700;
+
+  color: #ffffff;
+}
+
+.brand-text div {
+  margin-top: 4px;
+
+  font-size: 0.68rem;
+
+  color: rgba(255, 255, 255, 0.6);
+
+  letter-spacing: 0.04em;
+}
+
+
+/* =========================================
+   DESKTOP NAV LINKS
+   ========================================= */
+
+.nav-links {
+  margin-left: auto;
+
+  display: flex;
+  align-items: center;
+
+  gap: 30px;
+}
+
+
+/* =========================================
+   NAV BUTTON
+   ========================================= */
+
+.nav-links button {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+
+  padding: 8px 0;
+
+  border: none;
+  outline: none;
+
+  background: transparent;
+
+  color: #ffffff;
+
+  font-family: inherit;
+
+  font-size: 0.92rem;
+  font-weight: 500;
+
+  cursor: pointer;
+
+  transition:
+    transform 0.2s ease,
+    color 0.2s ease;
+}
+
+
+/*
+  IMPORTANT:
+  Every non-active button is WHITE.
+*/
+
+.nav-links button:not(.active) {
+  color: #ffffff;
+}
+
+
+/*
+  ONLY active button is blue.
+*/
+
+.nav-links button.active {
+  color: var(--accent);
+}
+
+
+/*
+  Make sure the span inside a non-active
+  button cannot stay blue.
+*/
+
+.nav-links button:not(.active) span {
+  color: #ffffff !important;
+}
+
+
+/*
+  Active span.
+*/
+
+.nav-links button.active span {
+  color: var(--accent) !important;
+}
+
+
+/* =========================================
+   HOVER
+   ========================================= */
+
+.nav-links button:not(.active):hover span {
+  color: var(--accent) !important;
+}
+
+
+/* =========================================
+   ACTIVE UNDERLINE
+   ========================================= */
+
+.nav-underline {
+  position: absolute;
+
+  left: 0;
+  right: 0;
+
+  bottom: 0;
+
+  height: 2px;
+
+  border-radius: 10px;
+
+  background: var(--accent);
+
+  box-shadow:
+    0 0 8px var(--accent),
+    0 0 14px rgba(0, 255, 224, 0.35);
+
+  transform-origin: center;
+}
+
+
+/* =========================================
+   MOBILE MENU BUTTON
+   ========================================= */
+
+.mobile-menu-button {
+  display: none;
+
+  margin-left: auto;
+
+  width: 42px;
+  height: 42px;
+
+  border: 1px solid rgba(255, 255, 255, 0.15);
+
+  border-radius: 10px;
+
+  background: rgba(255, 255, 255, 0.04);
+
+  color: #ffffff;
+
+  font-size: 1.3rem;
+
+  cursor: pointer;
+
+  align-items: center;
+  justify-content: center;
+
+  transition:
+    background 0.2s ease,
+    color 0.2s ease;
+}
+
+.mobile-menu-button:hover {
+  color: var(--accent);
+
+  background: rgba(255, 255, 255, 0.08);
+}
+
+
+/* =========================================
+   MOBILE MENU
+   ========================================= */
+
+.mobile-menu {
+  position: fixed;
+
+  top: 68px;
+  left: 0;
+  right: 0;
+
+  z-index: 999;
+
+  display: flex;
+  flex-direction: column;
+
+  padding: 18px 24px 25px;
+
+  background:
+    rgba(3, 12, 14, 0.97);
+
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+
+  border-bottom:
+    1px solid rgba(255, 255, 255, 0.08);
+
+  box-shadow:
+    0 15px 30px rgba(0, 0, 0, 0.25);
+}
+
+
+/* =========================================
+   MOBILE LINKS
+   ========================================= */
+
+.mobile-menu button {
+  position: relative;
+
+  width: 100%;
+
+  padding: 14px 8px;
+
+  border: none;
+  outline: none;
+
+  background: transparent;
+
+  color: #ffffff;
+
+  text-align: left;
+
+  font-family: inherit;
+
+  font-size: 1rem;
+
+  cursor: pointer;
+
+  transition:
+    color 0.2s ease,
+    padding-left 0.2s ease;
+}
+
+.mobile-menu button:not(.mobile-active) {
+  color: #ffffff;
+}
+
+.mobile-menu button:hover {
+  color: var(--accent);
+
+  padding-left: 14px;
+}
+
+
+/* =========================================
+   MOBILE ACTIVE
+   ========================================= */
+
+.mobile-menu button.mobile-active {
+  color: var(--accent);
+
+  font-weight: 600;
+}
+
+.mobile-menu button.mobile-active::after {
+  content: "";
+
+  position: absolute;
+
+  left: 0;
+  bottom: 7px;
+
+  width: 35px;
+  height: 2px;
+
+  background: var(--accent);
+
+  border-radius: 10px;
+
+  box-shadow:
+    0 0 8px var(--accent);
+}
+
+
+/* =========================================
+   TABLET
+   ========================================= */
+
+@media (max-width: 1050px) {
+
+  .nav {
+    padding: 0 24px;
+  }
+
+  .nav-links {
+    gap: 20px;
+  }
+
+  .nav-links button {
+    font-size: 0.85rem;
+  }
+
+}
+
+
+/* =========================================
+   MOBILE
+   ========================================= */
+
+@media (max-width: 850px) {
+
+  .nav {
+    height: 68px;
+
+    padding: 0 20px;
+  }
+
+  .desktop-nav {
+    display: none;
+  }
+
+  .mobile-menu-button {
+    display: flex;
+  }
+
+}
+
+
+/* =========================================
+   SMALL MOBILE
+   ========================================= */
+
+@media (max-width: 500px) {
+
+  .nav {
+    padding: 0 15px;
+  }
+
+  .brand-text h1 {
+    font-size: 0.9rem;
+  }
+
+  .brand-text div {
+    font-size: 0.6rem;
+  }
+
+  .logo {
+    width: 36px;
+    height: 36px;
+
+    font-size: 0.8rem;
+  }
+
+}
