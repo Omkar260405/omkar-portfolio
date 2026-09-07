@@ -18,25 +18,15 @@ I enjoy learning new technologies and building practical projects to improve my 
 
 ## ✨ Features
 
-- Modern dark-themed portfolio design
-- Fully responsive layout
-- Animated hero section
-- Sticky navigation bar
-- Smooth scrolling navigation
-- Active navigation section highlighting
-- Mobile-friendly hamburger menu
-- Animated skills section
-- Floating skill bubbles
-- Projects showcase
-- Certifications section
-- Resume section
-- About Me section
-- Contact section
-- Contact form
-- LinkedIn, Gmail and GitHub integration
-- Smooth animations and transitions
-- Fast Vite development and production build
-- Vercel deployment
+- 🎨 Modern dark-themed UI
+- ✨ Smooth animations and transitions
+- 🧭 Sticky navigation with active section highlighting
+- 🛠️ Animated skills section with floating skill bubbles
+- 💼 Projects showcase
+- 📜 Certifications and Resume sections
+- 📧 Contact form
+- 🔗 GitHub, LinkedIn and Gmail integration
+- 📱 Fully responsive design
 
 ---
 
