@@ -1,36 +1,106 @@
-# Omkar Wadkar — AI/ML & Software Developer Portfolio
+# 💻 Omkar Wadkar - Personal Portfolio
 
-A modern single-page React + Vite portfolio for **Omkar Wadkar**, focused on AI/ML, data analytics and software development.
+A modern and responsive personal portfolio website built to showcase my projects, technical skills, certifications, resume, and professional profile.
 
-## Included
-- Floating top-right desktop navbar with mobile hamburger menu
-- Smooth section scrolling and active navigation
-- Animated hero with typing headline
-- Projects: CineWatch, Global Currency Exchange Rate Prediction, Virtual Study Group
-- Reference-style animated Skills section
-- Real uploaded certificate images for Kaggle Python, Intro to Deep Learning, Advanced SQL and Deloitte Data Analytics Job Simulation
-- Improved About Me and education section
-- Resume and Contact sections
-- Responsive design for desktop, tablet and mobile
+🌐 **Live Portfolio:** (https://omkar-portfolio-9enk.vercel.app/)
 
-## Run locally
+---
 
-```bash
-npm install
-npm run dev
-```
+## 👨‍💻 About Me
 
-Then open the local URL shown by Vite (normally `http://localhost:5173`).
+Hi, I'm **Omkar Wadkar**, an MCA student specializing in **Artificial Intelligence and Machine Learning**.
 
-## Production build
+I am interested in Artificial Intelligence, Machine Learning, Software Development, Web Development, and Data Analytics.
 
-```bash
-npm run build
-npm run preview
-```
+I enjoy learning new technologies and building practical projects to improve my technical skills.
 
-## Deploy to Vercel
+---
 
-Import the project into Vercel. The standard Vite settings are:
-- Build command: `npm run build`
-- Output directory: `dist`
+## ✨ Features
+
+- Modern dark-themed portfolio design
+- Fully responsive layout
+- Animated hero section
+- Sticky navigation bar
+- Smooth scrolling navigation
+- Active navigation section highlighting
+- Mobile-friendly hamburger menu
+- Animated skills section
+- Floating skill bubbles
+- Projects showcase
+- Certifications section
+- Resume section
+- About Me section
+- Contact section
+- Contact form
+- LinkedIn, Gmail and GitHub integration
+- Smooth animations and transitions
+- Fast Vite development and production build
+- Vercel deployment
+
+---
+
+## 🛠️ Tech Stack
+
+### Frontend
+
+- React.js
+- JavaScript (ES6+)
+- HTML5
+- CSS3
+
+### Libraries
+
+- Vite
+- Framer Motion
+- React Icons
+- Lucide React
+- React Router DOM
+
+### Development Tools
+
+- Visual Studio Code
+- Git
+- GitHub
+
+### Deployment
+
+- Vercel
+
+---
+
+## 📂 Project Structure
+
+```text
+omkar-portfolio/
+│
+├── public/
+│
+├── src/
+│   ├── components/
+│   │   └── Navbar.jsx
+│   │
+│   ├── pages/
+│   │   ├── Home.jsx
+│   │   ├── Projects.jsx
+│   │   ├── Skills.jsx
+│   │   ├── Certificates.jsx
+│   │   ├── Resume.jsx
+│   │   ├── About.jsx
+│   │   └── Contact.jsx
+│   │
+│   ├── CSS/
+│   │   ├── Home.css
+│   │   ├── Navbar.css
+│   │   ├── Skills.css
+│   │   └── Contact.css
+│   │
+│   ├── App.jsx
+│   ├── main.jsx
+│   └── index.css
+│
+├── .gitignore
+├── index.html
+├── package.json
+├── package-lock.json
+└── README.md
